@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsSite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container1">
+                <a href="#">
+                    <img src="news_img.png" alt="">
+                </a>
+                <div class="contents">
+                    <ul class="ul-items">
+                        <li class="items-hover" id="ipl" onclick="onNavItemClick('ipl')">Sports</li>
+                        <li class="items-hover" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="items-hover" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    </ul>
+                </div>
+
+                <div class="searchBar">
+                    <input type="text" placeholder="e.g. Virat Kohli" id="textBar">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main >
+        <div class="container2" id="card-container">
+
+        </div>
+        
+
+    </main>
+
+    <template id="news-template">
+        <div class="cards">
+            <img src="https://via.placeholder.com/400x200" alt="failed to load" id="news-img"> 
+            <div class="card-content">
+                <h3 id="news-title">This is title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Deleniti vel aliquid, explicabo illo impedit, ad consequatur
+                        obcaecati tempora maiores mollitia consectetur nihil quibusdam
+                        libero.</p>
+
+            </div>
+
+        </div>
+    </template>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
